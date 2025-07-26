@@ -2,10 +2,10 @@
 -- LeetCode #175
 
 SELECT 
-    p.FirstName,
-    p.LastName,
+    p1.FirstName,
+    p1.LastName,
     a.City,
     a.State
-FROM Person p
+FROM Person p1
 LEFT JOIN Address a
-    ON p.PersonId = a.PersonId;
+    ON p1.PersonId = a.PersonId;
